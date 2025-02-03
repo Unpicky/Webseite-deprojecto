@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style2.css" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
 </head>
 <body>
     <header>
         <div class="container">
             <nav class="nav">
+				<div class = "menu-toggle" onclick="toggleMenu()">
+					<img src="Images/MENU.svg" class="menu-img">
+				</div>
                 <ul class="menu">
                     <li class="menu-item">
                         <a href="#" class="menu-link">About us</a>
@@ -36,5 +39,23 @@
             </nav>
         </div>
     </header>
+	<script> 
+		function toggleMenu(){
+			document.querySelector('.menu').classList.toggle('active');
+		}
+	</script>
+	<body>
+		<div class="hero-section">
+			<div class="content-1"> 
+				<l class="cntent-text">Hello</l>
+			</div>
+		</div>
+		<div class="content-2"> 
+			<l> hello123 </l>
+		</div>
+		<div class="content-3"> 
+			<l> hello </l>
+		</div>
+	</body>
 </body>
 </html>
