@@ -24,7 +24,82 @@
     width: 100%;
     object-fit: cover;
   }
-  
+  header{
+	position: fixed;
+	width:100%;
+	z-index:1000;
+    padding: 25px 0;
+}
+
+.container{
+    max-width: 1800px;
+    padding: 0 20px;
+	margin: 0 auto;
+	width: 100%;
+	margin-top: 10px;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    position: relative;
+    width:100%;
+    padding: 20px 40px;
+	border-radius:15px;
+}
+.menu{
+    position: absolute;
+	display: none;
+	list-style-type: none;
+	padding:0;
+	margin-top:10px;
+	margin-left:0;
+	top:100%;
+	background-color: #111111;
+	border-radius:15px;
+	max-width:285px;
+	max-height:350px;
+	left:0;
+}
+.menu.active{
+	display: block;
+}
+.menu-item{
+	text-align:left;
+	padding:10px 10px;
+}
+.menu-item::before {
+    content: "•"; 
+    color: #d4af7a;
+    font-size: 20px; 
+    margin-right: 5px; 
+}
+.menu-link, .phone{
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 5px 10px;
+}
+.menu ul lu{
+	margin: 10px;
+}
+.menu ul lu a:hover{
+	color: #d4af7a;
+}
+.menu-toggle{
+	cursor: pointer;
+}
+.logo img{
+	margin-top:0px;
+    bottom: 0px;
+    top: -30px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    max-height: 140px;
+	border-radius: 15px;
+}
   .banner-overlay {
     aspect-ratio: 13.33;
     object-fit: contain;
